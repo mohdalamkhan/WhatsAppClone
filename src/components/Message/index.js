@@ -23,8 +23,18 @@ const styles = StyleSheet.create({
         padding: 10,
         borderRadius: 10,
         maxWidth: '80%',
-
+        // Shadows started
+        shadowColor: '#000',
+        shadowOffset: {
+        width: 0,
+        height: 1,
+      },
+      shadowOpacity: 0.18,
+      shadowRadius: 1.0,
+      elevation: 1,
+      // Shadow ended
     },
+
     text:{
         color: 'gray',
         alignSelf:'flex-end',
