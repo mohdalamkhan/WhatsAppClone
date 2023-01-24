@@ -1,11 +1,21 @@
-import { View, Text, StyleSheet, ImageBackground, FlatList, KeyboardAvoidingView, Platform } from 'react-native';
+import { StyleSheet, ImageBackground, FlatList, KeyboardAvoidingView, Platform } from 'react-native';
 import bg from "../../assets/images/BG.png";
 import Message from "../components/Message/index";
 import messages from "../../assets/data/messages.json";
 import InputBox from '../components/InputBox';
 
+import { useRoute,useNavigation } from '@react-navigation/native';
+import { useEffect } from 'react';
 
 const ChatScreen = () => {
+  const route = useRoute();
+  const navigation =useNavigation();
+
+  // for Chat name, on header like chating with mom.
+  useEffect(()=>{
+  navigation.setOptions({title: route.params.name});
+  },[route.params.name])
+
   return (
     <KeyboardAvoidingView
     behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
