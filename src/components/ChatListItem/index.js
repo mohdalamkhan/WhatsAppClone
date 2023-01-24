@@ -43,7 +43,6 @@ const styles = StyleSheet.create({
   height:60,
   borderRadius:30,
   marginRight:10,
-  
   // height: 70,
   },
   row:{
@@ -55,7 +54,6 @@ const styles = StyleSheet.create({
 
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderBottomColor: 'lightgray',
-    
   },
   name:{
     flex: 1,
@@ -65,9 +63,6 @@ const styles = StyleSheet.create({
     color:'gray',
     marginBottom:2,
   },
-
-
-
 
 });
 
