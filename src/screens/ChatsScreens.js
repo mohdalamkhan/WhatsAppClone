@@ -10,8 +10,5 @@ const ChatsScreen = ()=>{
   />
 }
 
-// const ChatScreens = () => 
-//   return <FlatList data={chats}
-//   renderItems={({ item })=><ChatListItem chat={item}/>}
 
-export default ChatsScreen
+export default ChatsScreen;
